@@ -5,6 +5,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+@import "tailwindcss";
+
 :root {
   /* Color Palette */
   --color-dark-blue: #0d1b2a;
