@@ -7,7 +7,7 @@ const Conditions = () => {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Beginners | Terms & Conditions</title>
+        <title>Team Beginners | Terms & Conditions</title>
       </Helmet>
       Conditions
     </motion.div>

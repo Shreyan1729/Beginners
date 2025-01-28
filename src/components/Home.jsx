@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Beginners </title>
+        <title>Team Beginners </title>
       </Helmet>
       Home
     </motion.div>

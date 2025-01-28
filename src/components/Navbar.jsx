@@ -27,7 +27,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[var(--color-dark-blue)] h-[110px] flex flex-row justify-around items-center w-[100%]">
+    <nav className="bg-[transparent] h-[110px] flex flex-row justify-around items-center w-[100%]">
       <div className="logo flex justify-center items-center text-[24px] gap-[10px]">
         <a
           href="/"
@@ -35,7 +35,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="" className="w-[70px] " />
         </a>
-        Beginners
+        Team Beginners
       </div>
 
       <ul className="flex">

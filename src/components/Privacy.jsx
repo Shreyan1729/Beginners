@@ -7,7 +7,7 @@ const Privacy = () => {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Beginners | Privacy Policy</title>
+        <title>Team Beginners | Privacy Policy</title>
       </Helmet>
       Privacy
     </motion.div>

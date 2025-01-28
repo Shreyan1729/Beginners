@@ -22,7 +22,13 @@
   --border-radius: 12px;
 }
 
+.App {
+  padding: 15px 0;
+}
+
 nav {
+  border-bottom: 1.5px solid rgba(252, 252, 252, 0.4);
+
   .logo {
     font-family: var(--font-secondary);
     font-weight: 700;
