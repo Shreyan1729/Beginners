@@ -1,17 +1,38 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./styles/App.css";
 import "./styles/Responsive.css";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import Experiences from "./components/Experiences";
+import AboutUs from "./components/AboutUs";
+import Error from "./components/Error";
+
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      App
+
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/about-us" element={<AboutUs />} />
+
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
+
       <Footer />
-    </>
+    </BrowserRouter>
   );
 };
 

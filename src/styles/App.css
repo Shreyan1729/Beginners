@@ -1,0 +1,48 @@
+:root {
+  /* Color Palette */
+  --color-dark-blue: #0d1b2a;
+  --color-dark-green: #102a43;
+  --color-dark-violet: #240046;
+  --color-dark-gray: #1e293b;
+  --color-accent-blue: #2c7da0;
+  --color-accent-green: #38a169;
+  --color-accent-violet: #9d4edd;
+  --color-light-gray: #94a3b8;
+  --color-white: #f8f9fa;
+
+  --border-red: oklch(0.723603 0.176218 350.049);
+
+  /* Font Families */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+
+  /* Shadows and Borders */
+  --shadow-primary: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+}
+
+nav {
+  .logo {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+  }
+
+  ul {
+    li:last-child {
+      a {
+        font-weight: 700;
+        border: 2px solid var(--border-red) !important;
+        margin-left: 5px;
+        color: var(--border-red);
+
+        &:hover {
+          color: var(--color-dark-gray);
+          background-color: transparent;
+          border-color: var(--border-red) !important;
+          background-color: var(--border-red);
+        }
+      }
+    }
+  }
+}
