@@ -1,7 +1,18 @@
 import React from "react";
+import { motion } from "motion/react";
+
+import { pageTransition } from "./../assets/Elements";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <motion.div {...pageTransition}>
+      <Helmet>
+        <title>Beginners | Contact With Us</title>
+      </Helmet>
+      Contact With Us
+    </motion.div>
+  );
 };
 
 export default Contact;

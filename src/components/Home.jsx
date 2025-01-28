@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { motion } from "motion/react";
+
+import { pageTransition } from "./../assets/Elements";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <motion.div {...pageTransition}>
+      <Helmet>
+        <title>Beginners </title>
+      </Helmet>
+      Home
+    </motion.div>
+  );
+};
 
-export default Home
+export default Home;

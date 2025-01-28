@@ -26,21 +26,66 @@ nav {
   .logo {
     font-family: var(--font-secondary);
     font-weight: 700;
+
+    img {
+      transition: all 0.25s;
+    }
+
+    a:hover {
+      img {
+        width: 100px;
+      }
+    }
   }
 
   ul {
-    li:last-child {
+    li {
       a {
-        font-weight: 700;
-        border: 2px solid var(--border-red) !important;
-        margin-left: 5px;
-        color: var(--border-red);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.5px;
+        margin-right: 1.5px;
 
-        &:hover {
-          color: var(--color-dark-gray);
-          background-color: transparent;
-          border-color: var(--border-red) !important;
-          background-color: var(--border-red);
+        .line {
+          position: absolute;
+          background-color: var(--color-light-gray);
+          bottom: 0;
+          height: 3px;
+          width: 0;
+          transform-origin: center;
+          transition: transform 0.15s ease, width 0.15s ease;
+          border-radius: 2px;
+        }
+
+        &:hover .line,
+        &.active .line {
+          width: 100%;
+          transform: scaleX(1);
+          background-color: var(--color-light-gray);
+        }
+      }
+
+      &:last-child {
+        a {
+          .line {
+            height: 0;
+          }
+
+          transition: all 0.2s;
+          border-radius: 10px;
+          font-weight: 700;
+          border: 2px solid var(--border-red) !important;
+          margin-left: 5px;
+          color: var(--border-red);
+
+          &:hover {
+            color: var(--color-dark-gray);
+            background-color: transparent;
+            border-color: var(--border-red) !important;
+            background-color: var(--border-red);
+          }
         }
       }
     }

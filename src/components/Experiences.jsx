@@ -1,7 +1,18 @@
 import React from "react";
+import { motion } from "motion/react";
+
+import { pageTransition } from "./../assets/Elements";
+import { Helmet } from "react-helmet";
 
 const Experiences = () => {
-  return <div>Experiences</div>;
+  return (
+    <motion.div {...pageTransition}>
+      <Helmet>
+        <title>Beginners | Experiences</title>
+      </Helmet>
+      Experiences
+    </motion.div>
+  );
 };
 
 export default Experiences;

@@ -1,6 +1,6 @@
 import React from "react";
 import { logo } from "../assets/Elements";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = [
@@ -27,13 +27,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[var(--color-dark-blue)] h-[110px] flex flex-row justify-around items-center">
+    <nav className="bg-[var(--color-dark-blue)] h-[110px] flex flex-row justify-around items-center w-[100%]">
       <div className="logo flex justify-center items-center text-[24px] gap-[10px]">
         <a
           href="/"
-          className="w-[75px] h-[75px] rounded-[50%] border-teal-500 border-[2px] flex justify-center items-center"
+          className="w-[75px] h-[75px] flex justify-center items-center"
         >
-          <img src={logo} alt="" className="w-[70px]" />
+          <img src={logo} alt="" className="w-[70px] " />
         </a>
         Beginners
       </div>
@@ -41,12 +41,13 @@ const Navbar = () => {
       <ul className="flex">
         {links.map((link) => (
           <li key={link.name}>
-            <Link
+            <NavLink
               to={link.href}
-              className="!pt-[12px] !pb-[12px] !pr-[22px] !pl-[22px] hover:bg-[var(--color-dark-green)] text-[17px] duration-[0.2s] rounded-[10px]"
+              className="!pt-[12px] !pb-[12px] !pr-[22px] !pl-[22px] text-[16.5px] "
             >
               {link.name}
-            </Link>
+              <div className="line"></div>
+            </NavLink>
           </li>
         ))}
       </ul>
