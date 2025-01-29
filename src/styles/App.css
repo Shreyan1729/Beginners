@@ -115,6 +115,7 @@ nav {
     align-items: center;
     background-color: var(--color-dark-green);
     position: relative;
+    border-radius: 15px;
 
     .image-div {
       width: 100%;
