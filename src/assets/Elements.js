@@ -1,6 +1,37 @@
 import logo from "./logo.png";
+import My_Mathematics from "./My_Mathematics.png";
+import Periodic_table from "./Periodic_Table.png";
+import My_Coaching from "./My_Coaching.png";
 
 export { logo };
+
+export const ProjectDetails = [
+  {
+    name: "MyCoaching",
+    img: My_Coaching,
+    url: "https://my-coaching.vercel.app",
+    description:
+      "A demo educational platform, MyCoaching, designed to streamline learning and management for modern coaching centers.",
+    frameWorks: ["React", "Mongodb", "ParticlesJS"],
+  },
+  {
+    name: "My_Mathematics",
+    img: My_Mathematics,
+    // url: "https://my-mathematics.vercel.app",
+    url: null,
+    description:
+      "An educational website, My_Mathematics, designed to help students prepare effectively for Math Olympiad competitions.",
+    frameWorks: ["Vite", "Mongodb", "Slick CSS", "Framer Motion"],
+  },
+  {
+    name: "Periodic_Table",
+    img: Periodic_table,
+    url: "https://periodic-table-ebon.vercel.app",
+    description:
+      "An interactive and visually appealing periodic table for students, teachers, and enthusiasts to explore elements, atomic structure, and properties.",
+    frameWorks: ["Vite", "Tailwind CSS", "Framer Motion"],
+  },
+];
 
 export const ProjectsInfoWebDevelop = [
   { url: "https://my-coaching.vercel.app/", text: "MyCoaching" },

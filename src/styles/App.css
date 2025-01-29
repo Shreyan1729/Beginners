@@ -17,9 +17,13 @@
   --font-secondary: "Roboto", sans-serif;
   --font-heading: "Poppins", sans-serif;
 
-  /* Shadows and Borders */
-  --shadow-primary: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  --border-radius: 12px;
+  --bg-dark-gray: #2a2a2a; /* Neutral dark gray */
+
+  --accent-blue: #3b82f6; /* Blue for links/buttons */
+  --accent-green: #22c55e; /* Emerald green for success */
+  --accent-purple: #a855f7; /* Vibrant purple for highlights */
+  --accent-red: #ef4444; /* Bright red for errors */
+  --accent-yellow: #eab308; /* Yellow for warnings */
 }
 
 .App {
@@ -156,6 +160,132 @@ nav {
 
         b {
           color: var(--color-light-gray);
+        }
+      }
+    }
+  }
+
+  #projects {
+    background-color: var(--bg-dark-teal);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+
+    main {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .project {
+        width: calc(90% / var(--quantity));
+        height: 450px;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 30px 15px;
+
+        h2 {
+          font-size: 25px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          text-align: center !important;
+          margin-bottom: 15px;
+        }
+
+        .img-div {
+          height: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          .left {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+            color: white;
+            font-size: 20px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+              transform: rotate(135deg);
+            }
+          }
+
+          .github {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            font-size: 20px;
+            background-color: var(--bg-dark-gray);
+            padding: 10px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            box-shadow: -1px 2px 6px 6px var(--color-light-gray);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          img {
+            width: 98%;
+            max-height: 180px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+          }
+        }
+
+        ul {
+          list-style: none;
+          display: flex;
+
+          li {
+            margin: 5px;
+          }
+
+          .React {
+            color: var(--accent-blue);
+          }
+
+          .Tailwind {
+            color: #2b8ab8;
+          }
+
+          .Slick {
+            color: #3498db;
+          }
+
+          .Mongodb {
+            color: #02870a;
+          }
+
+          .ParticlesJS {
+            color: var(--accent-green);
+          }
+
+          .Framer {
+            color: #f4e915;
+          }
+
+          .Vite {
+            color: #ffb810;
+          }
+        }
+
+        p {
+          text-align: left;
         }
       }
     }
