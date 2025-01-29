@@ -2,6 +2,7 @@ import React from "react";
 import * as Icons from "../../assets/WebDevelopment/WebDevelopment";
 import Typed from "typed.js";
 import {
+  fadeIn,
   pageTransition,
   ProjectDetails,
   ProjectsInfoWebDevelop,
@@ -54,7 +55,12 @@ const WebDevelopment = () => {
       </Helmet>
 
       <motion.main {...pageTransition} className="ProjectsWebDevelopment">
-        <div className="grid">
+        <motion.div
+          variants={fadeIn("left", 0)}
+          initial="hidden"
+          whileInView={"show"}
+          className="grid"
+        >
           {randomIcons.map((icon, index) => (
             <div className="image-div" key={index}>
               <img
@@ -71,7 +77,9 @@ const WebDevelopment = () => {
               <b> Projects Name :</b> <span ref={el} />
             </p>
           </div>
-        </div>
+        </motion.div>
+
+        <hr className="!mt-[80px]" />
 
         <section id="projects" className="flex items-center">
           <h1 className="text-[40px] font-bold">Projects of Web Development</h1>
@@ -85,7 +93,10 @@ const WebDevelopment = () => {
 
           <main style={{ "--quantity": ProjectDetails.length }}>
             {ProjectDetails.map((project, index) => (
-              <div
+              <motion.div
+                variants={fadeIn("up", `0.${index}`)}
+                initial="hidden"
+                whileInView={"show"}
                 className="project bg-(--color-dark-green)"
                 key={project.url}
               >
@@ -106,12 +117,15 @@ const WebDevelopment = () => {
                 <p className="text-left text-gray-300">{project.description}</p>
                 <ul>
                   {project.frameWorks.map((frameWork) => (
-                    <li key={frameWork} className={frameWork}>
+                    <li
+                      key={frameWork}
+                      className="bg-sky-900 rounded-[50px] !pl-[20px] !pr-[20px] !pt-[5px] !pb-[5px]"
+                    >
                       {frameWork}
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             ))}
           </main>
         </section>

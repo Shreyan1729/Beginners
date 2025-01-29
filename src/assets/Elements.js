@@ -12,7 +12,7 @@ export const ProjectDetails = [
     url: "https://my-coaching.vercel.app",
     description:
       "A demo educational platform, MyCoaching, designed to streamline learning and management for modern coaching centers.",
-    frameWorks: ["React", "Mongodb", "ParticlesJS"],
+    frameWorks: ["Frontend", "Backend", "Database"],
   },
   {
     name: "My_Mathematics",
@@ -21,7 +21,7 @@ export const ProjectDetails = [
     url: null,
     description:
       "An educational website, My_Mathematics, designed to help students prepare effectively for Math Olympiad competitions.",
-    frameWorks: ["Vite", "Mongodb", "Slick CSS", "Framer Motion"],
+    frameWorks: ["Frontend", "Database", "UX/UI"],
   },
   {
     name: "Periodic_Table",
@@ -29,7 +29,7 @@ export const ProjectDetails = [
     url: "https://periodic-table-ebon.vercel.app",
     description:
       "An interactive and visually appealing periodic table for students, teachers, and enthusiasts to explore elements, atomic structure, and properties.",
-    frameWorks: ["Vite", "Tailwind CSS", "Framer Motion"],
+    frameWorks: ["Frontend", "API"],
   },
 ];
 

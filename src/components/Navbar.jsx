@@ -16,10 +16,10 @@ const Navbar = () => {
       name: "Experiences",
       href: "/experiences",
     },
-    {
-      name: "Pricing",
-      href: "/pricing",
-    },
+    // {
+    //   name: "Pricing",
+    //   href: "/pricing",
+    // },
     {
       name: "Contact Us",
       href: "/contact",

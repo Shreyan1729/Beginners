@@ -16,6 +16,7 @@ import Conditions from "./components/Conditions";
 import Privacy from "./components/Privacy";
 import Error from "./components/Error";
 import Pricing from "./components/Pricing";
+
 import WebDevelopment from "./components/Projects/WebDevelopment";
 import WebDesign from "./components/Projects/WebDesign";
 import UxUiDesign from "./components/Projects/UxUiDesign";
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/terms-and-conditions" element={<Conditions />} />
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/pricing" element={<Pricing />} />
+
           <Route path="projects" element={<CoursesLayout />}>
             <Route index element={<Projects />} />
             <Route path="web-development" element={<WebDevelopment />} />

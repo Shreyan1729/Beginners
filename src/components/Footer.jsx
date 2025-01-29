@@ -6,15 +6,19 @@ const Footer = () => {
   const links = [
     {
       name: "Web Development",
+      href: "/projects/web-development",
     },
     {
       name: "App Development",
+      href: "/projects/app-development",
     },
     {
       name: "UX/UI Design",
+      href: "/projects/ux-ui-design",
     },
     {
       name: "Web Design",
+      href: "/projects/web-design",
     },
   ];
 
@@ -63,7 +67,10 @@ const Footer = () => {
             <ul>
               {links.map((link) => (
                 <li className="!mt-[7px] !mb-[7px]" key={link.name}>
-                  <Link className="text-[17px] cursor-pointer hover:text-blue-300">
+                  <Link
+                    className="text-[17px] cursor-pointer hover:text-blue-300"
+                    to={link.href}
+                  >
                     {link.name}
                   </Link>
                 </li>

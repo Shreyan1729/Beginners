@@ -6,12 +6,25 @@ import { Helmet } from "react-helmet";
 
 const Experiences = () => {
   return (
-    <motion.div {...pageTransition}>
+    <>
       <Helmet>
         <title>Team Beginners | Experiences</title>
       </Helmet>
-      Experiences
-    </motion.div>
+
+      <motion.div
+        {...pageTransition}
+        className="flex flex-col justify-center items-center"
+      >
+        <h1 className="text-center text-[40px] font-bold">Our Experiences</h1>
+
+        <div className="webDevelopment">
+          <h2>Web Development</h2>
+          <div className="grid">
+            
+          </div>
+        </div>
+      </motion.div>
+    </>
   );
 };
 

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
+import { motion } from "motion/react";
+import { pageTransition } from "../../assets/Elements";
 
 const UxUiDesign = () => {
-  return (
-    <div>UxUiDesign</div>
-  )
-}
+  return <motion.div {...pageTransition}>UxUiDesign</motion.div>;
+};
 
-export default UxUiDesign
+export default UxUiDesign;
