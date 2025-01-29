@@ -62,13 +62,13 @@ const Footer = () => {
         <div className="w-[80%] flex justify-evenly">
           <div>
             <h2 className="text-[23px] text-neutral-400 !mb-[15px]">
-              All Serveries
+              Projects
             </h2>
             <ul>
               {links.map((link) => (
                 <li className="!mt-[7px] !mb-[7px]" key={link.name}>
                   <Link
-                    className="text-[17px] cursor-pointer hover:text-blue-300"
+                    className="text-[16px] cursor-pointer hover:text-blue-300"
                     to={link.href}
                   >
                     {link.name}

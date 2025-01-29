@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="logo flex justify-center items-center text-[30px] gap-[12px]">
         <a
           href="/"
-          className="w-[75px] h-[75px] flex justify-center items-center"
+          className="w-[70px] h-[70px] flex justify-center items-center"
         >
           <img src={logo} alt="" className="w-[70px] " />
         </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <li key={link.name}>
             <NavLink
               to={link.href}
-              className="!pt-[12px] !pb-[12px] !pr-[22px] !pl-[22px] text-[16.5px] "
+              className="!pt-[12px] !pb-[12px] !pr-[22px] !pl-[22px] text-[15px] "
             >
               {link.name}
               <div className="line"></div>
