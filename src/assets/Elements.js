@@ -4,7 +4,8 @@ export { logo };
 
 export const ProjectsInfoWebDevelop = [
   { url: "https://my-coaching.vercel.app/", text: "MyCoaching" },
-  { url: "https://my-mathematics.vercel.app/", text: "My_Mathematics" },
+  { url: null, text: "My_Mathematics" },
+  // { url: "https://my-mathematics.vercel.app/", text: "My_Mathematics" },
   { url: "https://periodic-table-ebon.vercel.app/", text: "Periodic Table" },
 ];
 
