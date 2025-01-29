@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="copy text-center text-[16.5px] w-[80%] border-t !pt-[20px]">
+      <div className="copy text-center text-[16.5px] w-[90%] border-t !pt-[25px]">
         Copyright © (2024 - {year}) - All right reserved by{" "}
         <a href="/" className="hover:text-blue-400">
           Team Beginners

@@ -2,8 +2,6 @@ import React from "react";
 import { logo } from "../assets/Elements";
 import { NavLink } from "react-router-dom";
 
-import { motion } from "motion/react";
-
 const Navbar = () => {
   const links = [
     {
@@ -17,6 +15,10 @@ const Navbar = () => {
     {
       name: "Experiences",
       href: "/experiences",
+    },
+    {
+      name: "Pricing",
+      href: "/pricing",
     },
     {
       name: "Contact Us",

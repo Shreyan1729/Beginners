@@ -15,6 +15,7 @@ import AboutUs from "./components/AboutUs";
 import Conditions from "./components/Conditions";
 import Privacy from "./components/Privacy";
 import Error from "./components/Error";
+import Pricing from "./components/Pricing";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/terms-and-conditions" element={<Conditions />} />
           <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/pricing" element={<Pricing />} />
 
           <Route path="*" element={<Error />} />
         </Routes>
