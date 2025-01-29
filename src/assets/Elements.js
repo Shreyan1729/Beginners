@@ -2,6 +2,12 @@ import logo from "./logo.png";
 
 export { logo };
 
+export const ProjectsInfoWebDevelop = [
+  { url: "https://my-coaching.vercel.app/", text: "MyCoaching" },
+  { url: "https://my-mathematics.vercel.app/", text: "My_Mathematics" },
+  { url: "https://periodic-table-ebon.vercel.app/", text: "Periodic Table" },
+];
+
 export const fadeIn = (direction, delay) => {
   return {
     hidden: {
