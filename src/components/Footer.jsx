@@ -8,13 +8,13 @@ const Footer = () => {
       name: "Web Development",
     },
     {
-      name: "Web Design",
+      name: "App Development",
     },
     {
       name: "UX/UI Design",
     },
     {
-      name: "App Development",
+      name: "Web Design",
     },
   ];
 
@@ -33,11 +33,13 @@ const Footer = () => {
     },
   ];
 
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="Footer bg-(--color-dark-gray) w-[100%] !pt-[70px] !pb-[50px]">
-      <div className="grid grid-cols-2">
+    <footer className="flex flex-col justify-center items-center bg-(--color-dark-gray) w-[100%] !pt-[70px] !pb-[50px]">
+      <div className="grid grid-cols-2 w-[100%] !pb-[40px]">
         <div className="flex flex-col justify-center items-center">
-          <div className="logo flex justify-start items-center text-[30px] gap-[12px] font-bold">
+          <div className="logo w-[50%] flex justify-start items-center text-[30px] gap-[12px] font-bold">
             <a
               href="/"
               className="w-[75px] h-[75px] flex justify-center items-center "
@@ -47,13 +49,13 @@ const Footer = () => {
             Team Beginners
           </div>
 
-          <p className="!mt-[10px] !ml-[5px] text-neutral-300 !font-(family-name:--font-primary)">
+          <p className="!mt-[10px] !ml-[45px] text-neutral-300 !font-(family-name:--font-primary)">
             Our expert team crafts high-quality, custom websites with <br />
             innovation and precision.
           </p>
         </div>
 
-        <div className="w-[80%] flex justify-around">
+        <div className="w-[80%] flex justify-evenly">
           <div>
             <h2 className="text-[23px] text-neutral-400 !mb-[15px]">
               All Serveries
@@ -76,7 +78,10 @@ const Footer = () => {
             <ul>
               {privacy.map((link) => (
                 <li className="!mt-[7px] !mb-[7px]" key={link.name}>
-                  <Link className="text-[17px] cursor-pointer hover:text-blue-300">
+                  <Link
+                    to={link.href}
+                    className="text-[17px] cursor-pointer hover:text-blue-300"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -84,7 +89,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h2 className="text-[23px] text-neutral-400 !mb-[15px]">
               All Serveries
             </h2>
@@ -100,11 +105,17 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className="copy"></div>
+      <div className="copy text-center text-[16.5px] w-[80%] border-t !pt-[20px]">
+        Copyright © (2024 - {year}) - All right reserved by{" "}
+        <a href="/" className="hover:text-blue-400">
+          Team Beginners
+        </a>
+        .
+      </div>
     </footer>
   );
 };
