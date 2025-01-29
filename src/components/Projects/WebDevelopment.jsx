@@ -1,10 +1,16 @@
 import React from "react";
 import * as Icons from "../../assets/WebDevelopment/WebDevelopment";
 import Typed from "typed.js";
-import { ProjectDetails, ProjectsInfoWebDevelop } from "../../assets/Elements";
+import {
+  pageTransition,
+  ProjectDetails,
+  ProjectsInfoWebDevelop,
+} from "../../assets/Elements";
 import { FaGithub } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 import { Helmet } from "react-helmet";
+
+import { motion } from "framer-motion";
 
 const shuffleArray = (array) => {
   const shuffled = [...array]; // Copy array to avoid mutation
@@ -47,7 +53,7 @@ const WebDevelopment = () => {
         <title>Team Beginners | Web Development Projects</title>
       </Helmet>
 
-      <main className="ProjectsWebDevelopment">
+      <motion.main {...pageTransition} className="ProjectsWebDevelopment">
         <div className="grid">
           {randomIcons.map((icon, index) => (
             <div className="image-div" key={index}>
@@ -68,8 +74,8 @@ const WebDevelopment = () => {
         </div>
 
         <section id="projects" className="flex items-center">
-          <h1 className="text-[45px] font-bold">All of my Projects</h1>
-          <p className="w-[80%] !mt-[20px] text-[17px] text-gray-200">
+          <h1 className="text-[40px] font-bold">Projects of Web Development</h1>
+          <p className="w-[80%] !mt-[20px] !mb-[25px] text-[17px] text-gray-200">
             Following projects showcases my skills and experience through
             real-world examples of my work. Each project is briefly described
             with links to code repositories and live demos in it. It reflects my
@@ -109,7 +115,7 @@ const WebDevelopment = () => {
             ))}
           </main>
         </section>
-      </main>
+      </motion.main>
     </>
   );
 };

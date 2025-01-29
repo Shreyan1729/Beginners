@@ -163,6 +163,14 @@ nav {
         }
       }
     }
+
+    .typed-link {
+      transition: all 0.1s;
+
+      &:hover {
+        color: var(--color-accent-blue);
+      }
+    }
   }
 
   #projects {
