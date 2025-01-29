@@ -24,10 +24,15 @@
 
 .App {
   padding: 15px 0;
+  padding-top: 115px !important;
+  width: 100%;
 }
 
 nav {
-  border-bottom: 1.5px solid rgba(252, 252, 252, 0.4);
+  /* border-bottom: 1.5px solid rgba(252, 252, 252, 0.4); */
+  box-shadow: 0 1px 28px -14px var(--color-black);
+  position: fixed;
+  top: 0;
 
   .logo {
     font-family: var(--font-secondary);
@@ -96,4 +101,16 @@ nav {
       }
     }
   }
+}
+
+.Home {
+}
+
+hr {
+  border: none;
+  width: 400px;
+  height: 10px;
+  background: linear-gradient(to left, var(--color-accent-blue), #1756b6);
+  border-radius: 10px;
+  margin: 0 auto;
 }

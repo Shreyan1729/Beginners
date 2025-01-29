@@ -2,6 +2,8 @@ import React from "react";
 import { logo } from "../assets/Elements";
 import { NavLink } from "react-router-dom";
 
+import { motion } from "motion/react";
+
 const Navbar = () => {
   const links = [
     {
@@ -27,8 +29,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[transparent] h-[110px] flex flex-row justify-around items-center w-[100%]">
-      <div className="logo flex justify-center items-center text-[24px] gap-[10px]">
+    <nav className="bg-(--color-dark-blue) h-[100px] flex flex-row justify-around items-center w-[100%]">
+      <div className="logo flex justify-center items-center text-[30px] gap-[12px]">
         <a
           href="/"
           className="w-[75px] h-[75px] flex justify-center items-center"
